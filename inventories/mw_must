@@ -1,0 +1,11 @@
+radius ansible_host=localhost
+
+[mw_must:children]
+idp
+
+[idp]
+radius
+
+[idp:vars]
+ansible_user=ubuntu
+
