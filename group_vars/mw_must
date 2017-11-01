@@ -1,8 +1,8 @@
-realms:
+realms: 
   - must.ac.mw
 
 organisation: Malawi University of Science and Technology
-city: Blantyre
+city: Thyolo
 country_code: MW
 
 
@@ -11,8 +11,8 @@ country_code: MW
 # LDAP
 ldap:
   enabled: False
-  server: dc.must.ac.mw
-  base_dn: ou=people,dc=must,dc=ac,dc=mw
+  server: ldap.example.net
+  base_dn: ou=people,dc=example,dc=net
   filter: "{% raw %}(uid=%{%{Stripped-User-Name}:-%{User-Name}}){% endraw %}"
   # How are user passwords saved in LDAP
   # user_password_type: Cleartext-Password
